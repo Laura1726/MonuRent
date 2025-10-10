@@ -1,8 +1,8 @@
 # MonuRent
 
-La page d'accueil a été réalisée par {Danis Habibovic}
-La page de boutique a été réalisée par {Kevin Padayodi}
-Le panier a été réalisé par {Laura Bornert}
-La page à propos a été réalisée par {Lucas Frichet}
+La page d'accueil a été réalisée par [Danis HABIBOVIC](mailto:danis.habibovic@edu.univ-fcomte.fr?subject=SAE_1_05_06)  
+La page de boutique a été réalisée par [Kevin PADAYODI](mailto:kevin.padayodi@edu.univ-fcomte.fr?subject=SAE_1_05_06) 
+Le panier a été réalisé par [Laura BORNERT](mailto:laura.bornert@edu.univ-fcomte.fr?subject=SAE_1_05_06) 
+La page à propos a été réalisée par [Lucas FRICHET](mailto:lucas.frichet02@edu.univ-fcomte.fr?subject=SAE_1_05_06)
 
-Lien du site (hébergé sur github) : https://github.io/ProjetDevWeb/index.html
+[Site Monu'Rent](https://laura1726.github.io/SAE-1.05-06/)
