@@ -1,3 +1,54 @@
+/* =================================================== Global =============================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+  padding: 10px 0;
+  background-color: #2E5266;
+  gap:10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: auto;
+}
+
+
+nav a:hover{
+    color: #9FB1BC;
+}
+
+footer{
+    background-color: #2E5266;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 120px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer>a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
 /* ===================================================Page accueil =============================*/
 
 
@@ -12,6 +63,112 @@
 /* ===================================================Page panier =============================*/
 
 
+.partie_gauche{
+    border: solid black;
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
 
+.partie_droite{
+    border: solid black;
+}
+
+
+.disposition{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+
+
+.carte_panier{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.inter_carte{
+    display: flex;
+    flex-direction: column;
+}
+
+.Recap_ligne{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carte_promo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 0;
+}
+
+
+
+
+#panier_titre{
+    text-align: center;
+}
+
+
+.img_panier{
+    width: 150px;
+    border-radius: 10px;
+}
+
+
+
+#recap_gras{
+    font-weight: bold;
+}
+
+
+
+.particle {
+    position: absolute;
+    pointer-events: none;
+    border-radius: 50%;
+ }
+
+.instruction {
+    color: white;
+    font-size: 24px;
+    margin-top: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+@keyframes explode {
+    to {
+        transform: translate(var(--tx), var(--ty)) rotate(var(--r)) scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
 
 /* ===================================================Page apropos =============================*/
