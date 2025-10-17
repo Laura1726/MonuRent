@@ -64,14 +64,14 @@ footer>a{
 
 
 .partie_gauche{
-    border: solid black;
     display: flex;
     flex-direction: row;
     gap:20px;
 }
 
 .partie_droite{
-    border: solid black;
+   position: absolute;
+   right: 0;
 }
 
 
