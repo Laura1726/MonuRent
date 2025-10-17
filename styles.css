@@ -5,30 +5,6 @@
     box-sizing: border-box;
 }
 
-header{
-    width: 100%;
-}
-
-header nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;     
-  padding: 10px 0;
-  background-color: #2E5266;
-  gap:10px;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: auto;
-}
-
-
-nav a:hover{
-    color: #9FB1BC;
-}
 
 footer{
     background-color: #2E5266;
@@ -345,98 +321,216 @@ body.page-accueil {
 /* =================================================== Page panier =============================*/
 
 
-.partie_gauche{
-    display: flex;
-    flex-direction: row;
-    gap:20px;
+/* =================================================== Page panier =============================*/
+
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 100px 40px 40px;
 }
 
-.partie_droite{
-   position: absolute;
-   right: 0;
+main h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2E5266;
 }
 
+main h2 {
+    font-size: 1.5rem;
+    color: #2E5266;
+    margin: 40px 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0;
+}
 
-.disposition{
+.disposition {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+    gap: 40px;
+    align-items: flex-start;
     width: 100%;
+    margin-bottom: 40px;
 }
 
-
-.carte_panier{
+.partie_gauche {
+    flex: 1;
     display: flex;
     flex-direction: column;
+    gap: 20px;
+}
+
+.partie_droite {
+    position: sticky;
+    top: 120px;
+    width: 320px;
+}
+
+.carte_panier {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+.carte_panier:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.carte_panier h4 {
+    font-size: 1.2rem;
+    color: #2E5266;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+.image-wrapper {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.img_panier {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.img_panier:hover {
+    transform: scale(1.05);
+}
+
+.inter_carte {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.inter_carte span {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.inter_carte button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: transparent;
+    color: #2E5266;
+    border: 2px solid #2E5266;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: fit-content;
+}
+
+.inter_carte button:hover {
+    background: #2E5266;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.Recap_ligne {
+    width: 100%;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.Recap_ligne h4 {
+    font-size: 1.3rem;
+    color: #2E5266;
+    margin: 0 0 20px 0;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.Recap_ligne span {
+    display: block;
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    padding: 8px 0;
+}
+
+#recap_gras {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #2E5266;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #2E5266;
+}
+
+.carte_promo {
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content:flex-start;
-    width: 250px;
-    height: 350px;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    gap: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
+    max-width: 500px;
+    margin-top: 20px;
 }
 
-
-.inter_carte{
-    display: flex;
-    flex-direction: column;
+.carte_promo h4 {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0;
 }
 
-.Recap_ligne{
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.carte_promo .image-wrapper {
+    flex-shrink: 0;
 }
 
-.carte_promo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:flex-start;
-    width: 250px;
-    height: 150px;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 0;
+.carte_promo .img_panier {
+    width: 100px;
+    height: 100px;
+    border: 3px solid white;
 }
 
+.carte_promo .inter_carte button {
+    background: white;
+    color: #667eea;
+    border: none;
+    padding: 12px 30px;
+    font-weight: 700;
+    font-size: 1rem;
+}
 
+.carte_promo .inter_carte button:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
 
-
-#panier_titre{
+#panier_titre {
     text-align: center;
 }
-
-
-.img_panier{
-    width: 150px;
-    border-radius: 10px;
-}
-
-
-
-#recap_gras{
-    font-weight: bold;
-}
-
-
 
 .particle {
     position: absolute;
     pointer-events: none;
     border-radius: 50%;
- }
+}
 
 .instruction {
-    color: white;
-    font-size: 24px;
+    color: #2E5266;
+    font-size: 1.1rem;
     margin-top: 30px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-align: center;
 }
 
 @keyframes explode {
@@ -450,6 +544,50 @@ body.page-accueil {
     to {
         opacity: 0;
         transform: scale(1.5);
+    }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .disposition {
+        flex-direction: column;
+    }
+    
+    .partie_droite {
+        position: static;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .carte_panier {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .inter_carte button {
+        margin: 15px auto 0;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 80px 20px 20px;
+    }
+    
+    main h1 {
+        font-size: 2rem;
+    }
+    
+    .img_panier {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .carte_promo {
+        flex-direction: column;
+        text-align: center;
     }
 }
 
