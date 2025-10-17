@@ -34,9 +34,7 @@
 
                 <div class="carte_panier">
                     <h4>Tours jumelles</h4>
-                    <div class="image-wrapper" id="imageWrapper">
-                        <img src="images/tour_jumelles.jpg" class="img_panier" id="mainImage">
-                    </div>
+                    <img src="images/tour_jumelles.jpg" class="img_panier" id="mainImage">
                     <div class="inter_carte">
                         <span>A louer</span>
                         <span>date : 11/09/2025</span>
@@ -49,9 +47,7 @@
 
                 <div class="carte_panier">
                     <h4>ISS</h4>
-                    <div class="image-wrapper" id="imageWrapper">
-                        <img src="images/ISS.jpg" class="img_panier" id="mainImage">
-                    </div>
+                    <img src="images/ISS.jpg" class="img_panier">
                     <div class="inter_carte">
                         <span>A louer</span>
                         <span>date : 21/04/2026</span>
@@ -77,94 +73,44 @@
         Obtenez - 20% en ajoutant un des articles ci-dessous
         <div class="carte_promo">
             <h4>Boeing</h4>
-            <div class="image-wrapper" id="imageWrapper">
-                <img src="images/boeing.jpg" class="img_panier" id="mainImage">
-            </div>
+            <img src="images/boeing.jpg" class="img_panier">
             <div class="inter_carte">
                 <button>Ajouter</button>
             </div>
         </div>
         
     </main>
-    <footer>
-        <br>
-        <br>
-        <p>&copy; Page faite par Laura BORNERT</p>
-    </footer>
+    <footer class="pied-page">
+    <div class="bloc-footer">
+      <div class="colonne-footer">
+        <h3>Monu'Rent</h3>
+        <p>Location premium. Livraison rapide. Service discret.</p>
+      </div>
+      <div class="colonne-footer">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="boutique.html">Boutique</a></li>
+          <li><a href="apropos.html">À propos</a></li>
+        </ul>
+      </div>
+      <div class="colonne-footer">
+        <h4>Réseaux</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="colonne-footer">
+        <h4>Contact</h4>
+        <p>contact@monurent.fr<br>+33 6 00 00 00 00</p>
+      </div>
+    </div>
+    <div class="bas-footer">
+      <p>© 2025 Monu'Rent — Tous droits réservés.</p>
+    </div>
+  </footer>
     
-
-
-    <script>
-        const img = document.getElementById('mainImage');
-        const wrapper = document.getElementById('imageWrapper');
-        const resetBtn = document.getElementById('resetBtn');
-        let hasExploded = false;
-
-        img.addEventListener('click', function(e) {
-            if (hasExploded) return;
-            hasExploded = true;
-
-            const rect = img.getBoundingClientRect();
-            const particleCount = 50;
-
-            // Fade out l'image principale
-            img.style.animation = 'fadeOut 0.5s forwards';
-
-            // Créer les particules
-            for (let i = 0; i < particleCount; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                
-                const size = Math.random() * 30 + 10;
-                particle.style.width = size + 'px';
-                particle.style.height = size + 'px';
-                
-                // Position aléatoire sur l'image
-                const startX = Math.random() * rect.width;
-                const startY = Math.random() * rect.height;
-                particle.style.left = startX + 'px';
-                particle.style.top = startY + 'px';
-                
-                // Couleur aléatoire
-                const colors = ['#ff6b6b', '#feca57', '#48dbfb', '#ff9ff3', '#54a0ff', '#00d2d3'];
-                particle.style.background = colors[Math.floor(Math.random() * colors.length)];
-                
-                // Direction de l'explosion
-                const angle = Math.random() * Math.PI * 2;
-                const velocity = Math.random() * 300 + 150;
-                const tx = Math.cos(angle) * velocity;
-                const ty = Math.sin(angle) * velocity;
-                const rotation = Math.random() * 720 - 360;
-                
-                particle.style.setProperty('--tx', tx + 'px');
-                particle.style.setProperty('--ty', ty + 'px');
-                particle.style.setProperty('--r', rotation + 'deg');
-                
-                particle.style.animation = 'explode 1s ease-out forwards';
-                
-                wrapper.appendChild(particle);
-                
-                // Nettoyer les particules après l'animation
-                setTimeout(() => particle.remove(), 1000);
-            }
-
-            // Afficher le bouton reset
-            setTimeout(() => {
-                resetBtn.style.display = 'inline-block';
-            }, 1000);
-        });
-
-        resetBtn.addEventListener('click', function() {
-            hasExploded = false;
-            img.style.animation = '';
-            img.style.opacity = '1';
-            img.style.transform = 'scale(1)';
-            resetBtn.style.display = 'none';
-            
-            // Supprimer les particules restantes
-            const particles = wrapper.querySelectorAll('.particle');
-            particles.forEach(p => p.remove());
-        });
-    </script>
 </body>
 </html>

@@ -496,31 +496,65 @@ body.page-accueil {
 
 
 
-
 /* =================================================== Page panier =============================*/
 
+body {
+    background: linear-gradient(-45deg, #1a1a2e, #16213e, #0f3460, #1a1a2e);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+    position: relative;
+    overflow-x: hidden;
+}
 
-/* =================================================== Page panier =============================*/
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(184, 134, 11, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 40% 20%, rgba(255, 215, 0, 0.06) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 main {
     max-width: 1400px;
     margin: 0 auto;
     padding: 100px 40px 40px;
+    position: relative;
+    z-index: 1;
 }
 
 main h1 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #2E5266;
+    color: #d4af37;
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
 }
 
 main h2 {
     font-size: 1.5rem;
-    color: #2E5266;
+    color: #d4af37;
     margin: 40px 0 20px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #e0e0e0;
+    border-bottom: 2px solid rgba(212, 175, 55, 0.3);
 }
 
 .disposition {
@@ -551,14 +585,18 @@ main h2 {
     align-items: flex-start;
     gap: 20px;
     padding: 20px;
-    background: white;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    transition: box-shadow 0.3s ease;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    transition: all 0.3s ease;
 }
 
 .carte_panier:hover {
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 12px 40px rgba(212, 175, 55, 0.3);
+    transform: translateY(-5px);
+    border-color: rgba(212, 175, 55, 0.4);
 }
 
 .carte_panier h4 {
@@ -620,10 +658,12 @@ main h2 {
 
 .Recap_ligne {
     width: 100%;
-    background: white;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(212, 175, 55, 0.3);
 }
 
 .Recap_ligne h4 {
