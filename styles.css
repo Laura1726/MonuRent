@@ -817,4 +817,46 @@ main h2 {
   font-size: 15px;
 }
 
+.promo_enligne{
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+}
+
+.gras{
+  font-weight: bold;
+}
+
+#payement{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#payement p{
+  font-style: italic;
+  font-size: 10px;
+}
+
+
+#payement button{
+  background: #c5a253;
+  color: #0a0a0a;
+  border: none;
+  border-radius: 5px;
+  width: 150px;
+  padding: 12px 30px;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+#payement button:hover {
+  background: #e8d18b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(197, 162, 83, 0.25);
+}
+
 /* ===================================================Page apropos =============================*/
