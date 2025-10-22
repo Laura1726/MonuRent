@@ -1161,9 +1161,9 @@ textarea {
   }
 }
 
-/* =================================================== Page FAQ ============================= */
+/* =================================================== Page Erreur 404 ============================= */
 
-.bodyFAQ {
+.bodyErreur404 {
   margin: 0;
   height: 100vh;
   display: flex;
@@ -1175,27 +1175,27 @@ textarea {
   text-align: center;
 }
 
-.h1FAQ {
+.h1Erreur404 {
   font-family: 'Great Vibes', cursive;
   font-size: 140px;
   color: var(--gold);
   margin: 0;
 }
 
-.h2FAQ {
+.h2Erreur404 {
   margin: 10px 0;
   font-size: 28px;
   font-weight: normal;
 }
 
-.pFAQ {
+.pErreur404 {
   color: var(--gris);
   max-width: 500px;
   margin-bottom: 30px;
   font-size: 16px;
 }
 
-.aFAQ {
+.aErreur404 {
   text-decoration: none;
   background: var(--gold);
   color: var(--background);
@@ -1205,11 +1205,11 @@ textarea {
   transition: background 0.3s;
 }
 
-.aFAQ:hover {
+.aErreur404:hover {
   background: var(--gold);
 }
 
-.monurentFAQ {
+.monurentErreur404 {
   position: absolute;
   top: 20px;
   left: 20px;
