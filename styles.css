@@ -1160,3 +1160,61 @@ textarea {
     flex-direction: column;
   }
 }
+
+/* =================================================== Page FAQ ============================= */
+
+.bodyFAQ {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.h1FAQ {
+  font-family: 'Great Vibes', cursive;
+  font-size: 140px;
+  color: var(--gold);
+  margin: 0;
+}
+
+.h2FAQ {
+  margin: 10px 0;
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.pFAQ {
+  color: var(--gris);
+  max-width: 500px;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.aFAQ {
+  text-decoration: none;
+  background: var(--gold);
+  color: var(--background);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.aFAQ:hover {
+  background: var(--gold);
+}
+
+.monurentFAQ {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  color: var(--gold);
+  letter-spacing: 1px;
+  font-weight: bold;
+}
