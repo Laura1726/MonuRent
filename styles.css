@@ -745,49 +745,7 @@ main h2 {
   text-align: center;
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-  .disposition {
-    flex-direction: column;
-  }
 
-  .partie_droite {
-    position: static;
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-
-  .carte_panier {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .inter_carte button {
-    margin: 15px auto 0;
-  }
-}
-
-@media (max-width: 768px) {
-  main {
-    padding: 80px 20px 20px;
-  }
-
-  main h1 {
-    font-size: 2rem;
-  }
-
-  .img_panier {
-    width: 150px;
-    height: 150px;
-  }
-
-  .carte_promo {
-    flex-direction: column;
-    text-align: center;
-  }
-}
 
 
 @keyframes goldShine {
@@ -818,7 +776,7 @@ main h2 {
 }
 
 
-#italique{
+.italique{
   font-style: italic;
   font-size: 15px;
 }
@@ -831,6 +789,7 @@ main h2 {
 
 .gras{
   font-weight: bold;
+  border-bottom: 2px solid rgba(197, 162, 83, 0.3);
 }
 
 #payement{
