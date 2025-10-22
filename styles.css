@@ -18,7 +18,7 @@ footer{
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 120px;
+    margin-top: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -1136,7 +1136,7 @@ textarea {
   from { opacity: 0; transform: scale(0.8); }
 }
 
-/* 📱 Responsive mobile */
+/* ===== Responsivité page À propos ===== */
 @media (max-width:600px) {
   .contentAPropos {
     padding: 0 16px;
