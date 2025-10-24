@@ -493,8 +493,51 @@ body.page-accueil {
 
 
 /* =================================================== Page boutique =============================*/
+.grille-articles {
+  padding-top: 70px ;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content:  center;
+}
+
+.images_fond_boutique{
+  height: 407px;
+  border-radius: 20px;
+}
+
+.deux_colonnes{
+  width: 660px;
+}
+
+.trois_colonnes{
+  width: 1000px;
+}
 
 
+@media (max-width: 768px) {
+.deux_colonnes{
+  width: 320px;
+}
+
+.trois_colonnes{
+  width: 320px;
+}
+
+}
+
+@media (max-width: 1014px) {
+.trois_colonnes{
+  width: 660px;
+}
+
+}
+
+@media (max-width: 1350px) {
+.deux_colonnes{
+  width: 660px;
+}
+}
 
 /* =================================================== Page panier =============================*/
 body {
