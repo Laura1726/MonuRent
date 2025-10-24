@@ -1,76 +1,199 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactez-nous</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=check_circle">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — Monu'Rent</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=contact_support">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap">
 </head>
-<body>
 
-    <section class="contact-section">
-        <div class="contact-container">
-            <h1>Contactez-nous</h1>
-            <p>Une question, un projet, un partenariat ? Écrivez-nous !</p>
-
-            <form id="contactForm" class="contact-form">
-                <label>Nom complet *</label>
-                <input type="text" name="nom" placeholder="Votre nom complet" required>
-
-                <label>Email *</label>
-                <input type="email" name="email" placeholder="exemple@email.com" required>
-
-                <label>Téléphone</label>
-                <input type="tel" name="telephone" placeholder="Votre numéro (facultatif)">
-
-                <label>Sujet *</label>
-                <input type="text" name="sujet" placeholder="Sujet du message" required>
-
-                <label>Message *</label>
-                <textarea name="message" rows="5" placeholder="Votre message..." required></textarea>
-
-                <button type="submit" class="btn-submit">Envoyer le message</button>
-                <small>* Champs obligatoires</small>
-            </form>
-
-            <div id="confirmationMessage" class="confirmation">
-                <span class="material-symbols-outlined">check_circle</span> Votre message a été envoyé avec succès !
-            </div>
-
-            <hr>
-
-            <div class="socials">
-                <h3>Suivez-nous</h3>
-                <div class="icons">
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://github.com/Laura1726/MonuRent"><i class="fa-brands fa-github"></i></a>
+<body class="bodyAPropos">
+    <header class="en-tete">
+        <div class="barre-nav">
+            <nav class="nav-gauche">
+                <a href="boutique.html">SHOP</a>
+                <a href="apropos.html">ABOUT</a>
+                <a href="erreur404.html">FAQS</a>
+            </nav>
+            <a href="index.html" class="marque">Monu'Rent</a>
+            <nav class="nav-droite">
+                <a href="panier.html">CART (0)</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="contentAPropos">
+        <section class="case-aPropos apparition">
+            <header class="case-header">
+                <div class="brand" aria-hidden="true">
+                    logo
                 </div>
+                <div>
+                    <h1 class="contact-titre">À propos de Monu'Rent</h1>
+                </div>
+            </header>
+        </section>
+    
+        <section class="case-aPropos apparition">
+            <h1 class="contact-titre">Fondation</h1>
+            <br>
+            <div class="content-case">
+                Monu'Rent commence bien avant l'arrivée du numérique et de la digitalisation.
+                C'est en 1878 par un membre de  la famille passionnée par l'architecture et à la sculpture qu'il fonde un atelier dédié à la création de maquettes de monuments historiques.
+                Son objectif était simple, préserver la beauté du patrimoine.
+            </div>
+        </section>
+
+        <section class="case-aPropos apparition">
+            <h1 class="contact-titre">Histoire</h1>
+            <br>
+            <div class="content-case">
+                Depuis 1878, Monu'Rent a su évoluer avec son temps.
+                Dans les années 1960, avec la 3ème génération de la famille, l'entreprise s'ouvre à l'international et propose son savoir-faire à travers le monde, comme dans les musées.
+                D'un simple atelier de maquettes, elle décide en 2016 de prendre un tournant décisif dans le but de se moderniser, un changement qui se veut radical, la location de Monuments à travers le monde.
+                Avec ses importants investissements depuis 1878, aujourd'hui Monu'Rent est un acteur mondial incontournable dans le domaine de la préservation du patrimoine, alliant tradition, modernité et originalité.
+            </div>
+        </section>
+
+        <section class="case-aPropos apparition">
+            <h1 class="contact-titre">Comment fait-on ?</h1>
+            <br>
+            <div class="content-case">
+                Le principe de Monu'Rent est simple.
+                L'entreprise achète des droits de location en collaboration avec les collectivités locales pour faire des partenariats, ainsi l'argent est réinvesti dans la préservation du patrimoine.
+                Ensuite, les monuments sont loués à des particuliers ou des entreprises pour des événements privés ou professionnels, passer un soirée en amoureux, ce que vous voulez.
+                Les monuments sont bien sûr assurés et protégés lors des locations.
+                Monu'Rent propose aussi des services additionnels comme la restauration, la décoration, la sécurité, etc.
+                Ainsi, Monu'Rent permet à chacun de profiter du patrimoine mondial tout en contribuant à sa préservation et à sa restauration.
+            </div>
+        </section>
+
+        <section class="case-aPropos apparition">
+            <h1 class="contact-titre">Comment ça marche ?</h1>
+            <br>
+            <div class="content-case">
+                Monu'Rent propose une plateforme en ligne où vous pouvez facilement parcourir notre large catalogue de monuments disponibles à la location à travers le monde.
+                Vous pouvez filtrer les résultats par type de monument, localisation, disponibilité et prix.
+                Une fois que vous avez trouvé le monument qui vous intéresse, vous pouvez consulter les détails, les photos et les avis des clients précédents.
+                Pour réserver, il vous suffit de sélectionner les dates souhaitées, de remplir vos informations personnelles et de procéder au paiement sécurisé en ligne.
+                Vous recevrez ensuite une confirmation de réservation par e-mail avec toutes les informations nécessaires pour votre location, le monument vous est donc privatisé.
+                Le jour de la location, notre équipe sur place vous accueillera et s'assurera que tout se passe bien pour vous. Si vous avez des besoins particuliers, n'hésitez pas à nous prévenir à l'avance.
+                L'équipe de Monu'Rent est là pour rendre votre expérience inoubliable. Nous répondrons à toutes vos questions et vous assisterons tout au long du processus de location.
+                Profitez pleinement de votre expérience unique et n'hésitez pas à partager vos souvenirs avec nous sur les réseaux sociaux !
+            </div>
+        </section>
+
+        <br>
+        <hr class="apparition">
+        <br>
+
+        <section class="case-aPropos apparition">
+            <header class="case-header-contact">
+                <div class="brand" aria-hidden="true">
+                    <span class="material-symbols-outlined" style="font-size: 150%;">contact_support</span>
+                </div>
+                <div class="contact">
+                    <h1 class="contact-titre">Contactez Monu'Rent</h1>
+                    <p class="contact-sous-titre">
+                        Une question ? Une demande ? Un problème ? - Écrivez-nous !
+                        <br>
+                        Nous vous répondrons dans les plus brefs délais.
+                    </p>
+                </div>
+            </header>
+
+            <form id="contactForm" novalidate>
+                <label for="name">Nom complet <span class="required">*</span></label>
+                <input id="name" name="name" type="text" placeholder="Ex : Lucas FRICHET" required autocomplete="name">
+
+                <label for="email">Adresse e-mail <span class="required">*</span></label>
+                <input id="email" name="email" type="email" placeholder="exemple@domaine.com" required autocomplete="email">
+
+                <label for="phone">Téléphone</label>
+                <input id="phone" name="phone" type="tel" placeholder="+33 6 12 34 56 78">
+
+                <label for="subject">Sujet <span class="required">*</span></label>
+                <input id="subject" name="subject" type="text" placeholder="Ex : Demande d'information" required>
+
+                <label for="message">Message <span class="required">*</span></label>
+                <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
+
+                <div class="actions">
+                    <button type="submit" class="btn primary">Envoyer le message</button>
+                    <button type="reset" class="btn secondary">Réinitialiser</button>
+                 </div>
+
+                <p class="obligatoire">* Champs obligatoires</p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pied-page">
+        <div class="bloc-footer">
+            <div class="colonne-footer">
+                <h3>Monu'Rent</h3>
+                <p>Location premium. Livraison rapide. Service discret.</p>
+            </div>
+            <div class="colonne-footer">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                </ul>
+            </div>
+            <div class="colonne-footer">
+                <h4>Réseaux</h4>
+                <ul>
+                    <li><a href="erreur404.html">Instagram</a></li>
+                    <li><a href="erreur404.html">Facebook</a></li>
+                    <li><a href="erreur404.html">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="colonne-footer">
+                <h4>Contact</h4>
+                <p>contact@monurent.fr<br>+33 6 00 00 00 00</p>
             </div>
         </div>
-    </section>
-
-    <footer>
-        <p>&copy; Page faite par <strong>Lucas FRICHET</strong> — 2025</p>
+        <div class="bas-footer">
+            <p>© 2025 Monu'Rent — Tous droits réservés.</p>
+        </div>
     </footer>
+
+    <div id="overlay" class="overlay" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-confirm animate-scale" role="document">
+            <p id="modal-text"></p>
+            <button class="ok" id="okBtn">Fermer</button>
+        </div>
+    </div>
 
     <script>
         const form = document.getElementById('contactForm');
-        const confirmation = document.getElementById('confirmationMessage');
+        const overlay = document.getElementById('overlay');
+        const okBtn = document.getElementById('okBtn');
+        const modalText = document.getElementById('modal-text');
 
-        form.addEventListener('submit', (e) => {
+        form.addEventListener('submit', e => {
             e.preventDefault();
-            confirmation.style.display = 'block';
-            form.reset();
-        });
-    </script>
+            const name = form.name.value.trim();
+            const subject = form.subject.value.trim();
+            const email = form.email.value.trim();
+            const message = form.message.value.trim();
 
+            if (!name || !subject || !email || !message) {
+                modalText.textContent = "✘ 🅼🅴🆂🆂🅰🅶🅴 🅽🅾🅽 🅴🅽🆅🅾🆈🅴 !! Veuillez compléter tous les champs obligatoires marqués d’un *.";
+            } else {
+                modalText.textContent = `✔ 🅼🅴🆂🆂🅰🅶🅴 🅴🅽🆅🅾🆈🅴 !! Merci ${name}. Votre message concernant « ${subject} » a bien été pris en compte. Nous vous répondrons à l’adresse ${email} dans les plus brefs délais.`;
+                form.reset();
+            }
+            overlay.classList.add('show');
+        });
+
+        okBtn.addEventListener('click', () => overlay.classList.remove('show'));
+        overlay.addEventListener('click', e => { if (e.target === overlay) overlay.classList.remove('show'); });
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') overlay.classList.remove('show'); });
+    </script>
 </body>
 </html>
