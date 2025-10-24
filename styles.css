@@ -541,6 +541,7 @@ body::before {
 }
 
 p {
+  font-family: "Tenor Sans", sans-serif;
   background: linear-gradient(135deg, #c5a253 0%, #e8d18b 50%, #c5a253 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -564,6 +565,7 @@ main h1 {
 
 main h2 {
   font-size: 1.5rem;
+  font-family: "Marcellus", serif;
   color: #c5a253;
   margin: 40px 0 20px;
   padding-bottom: 10px;
@@ -598,13 +600,12 @@ main h2 {
   align-items: center;
   gap: 20px;
   padding: 20px;
-  background: linear-gradient(180deg, #1e1e1e 0%, #141414 100%);
+  background: linear-gradient(180deg, #2c2c2c 0%, #1d1d1d 100%);
   color: #f4f3f0;
   backdrop-filter: blur(6px);
-  border-radius: 14px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(197, 162, 83, 0.3);
+  border-radius: 6px;
   transition: all 0.3s ease;
+  font-family: "Tenor Sans", sans-serif;
 }
 
 .carte_panier:hover {
@@ -617,13 +618,14 @@ main h2 {
   font-size: 1.2rem;
   margin: 0 0 10px 0;
   font-weight: 600;
+  font-family: "Marcellus", serif;
 }
 
 .img_panier {
   width: 180px;
   height: 180px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 6px;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
@@ -665,17 +667,18 @@ main h2 {
 
 .Recap_ligne {
   width: 100%;
-  background: linear-gradient(180deg, #1e1e1e 0%, #141414 100%);
+  background: linear-gradient(180deg, #2c2c2c 0%, #1d1d1d 100%);
   color: #f4f3f0;
   backdrop-filter: blur(6px);
   padding: 25px;
-  border-radius: 14px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(197, 162, 83, 0.3);
+  border-radius: 6px;
+  box-shadow: 0 12px 40px rgba(197, 162, 83, 0.25);
+  font-family: "Tenor Sans", sans-serif;
 }
 
 .Recap_ligne h4 {
   font-size: 1.3rem;
+  font-family: "Marcellus", serif;
   color: #e8d18b;
   margin: 0 0 20px 0;
   padding-bottom: 15px;
@@ -691,7 +694,6 @@ main h2 {
 }
 
 #recap_gras {
-  font-weight: 700;
   font-size: 1.4rem;
   color: #c5a253;
   margin-top: 20px;
@@ -705,22 +707,23 @@ main h2 {
   align-items: center;
   gap: 20px;
   padding: 20px;
-  background: linear-gradient(145deg, #1b1b1b 0%, #262626 100%);
-  border-radius: 14px;
+  background: linear-gradient(180deg, #2c2c2c 0%, #1d1d1d 100%);
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius: 6px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(197, 162, 83, 0.3);
   max-width: 400px;
   margin-top: 20px;
 }
 
 .carte_promo h4 {
   color: #e8d18b;
+  font-family: "Marcellus", serif;
   font-size: 1.2rem;
   margin: 0;
 }
 
 .carte_promo .img_panier {
-  width: 100px;
+  width: 200px;
   height: 100px;
   border: 3px solid rgba(197, 162, 83, 0.4);
 }
@@ -743,9 +746,9 @@ main h2 {
 
 #panier_titre {
   text-align: center;
+  font-family: "Luxurious Script", cursive;
+  font-size: 120px;
 }
-
-
 
 
 @keyframes goldShine {
@@ -822,6 +825,54 @@ main h2 {
   background: #e8d18b;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(197, 162, 83, 0.25);
+}
+
+
+@media(max-width: 900px){
+
+    .disposition{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .partie_gauche{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .carte_panier{
+      min-width: 325px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #panier_titre{
+      font-size: 100px;
+      padding-top: 120px;
+    }
+
+    .promo_enligne{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h2{
+      text-align: center;
+    }
+
+    p{
+      text-align: center;
+    }
+
+    #promo{
+      font-size: 50px;
+    }
 }
 
 /* ===================================================Page apropos =============================*/
