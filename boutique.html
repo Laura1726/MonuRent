@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=star" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boutique</title>
 </head>
-<body>
+<body class="bodyAPropos">
     <header class="en-tete">
         <div class="barre-nav">
         <nav class="nav-gauche">
@@ -23,15 +24,41 @@
   <div class="grille-articles">
 
      <img class="images_fond_boutique deux_colonnes"src="https://tse3.mm.bing.net/th/id/OIP.Svm2yMrLCavTdC3Ord18fAHaFj?pid=Api&P=0&h=180" alt="">
+    
     <div class="carte-monument">
-      <img src="https://www.toureiffel.paris/sites/default/files/styles/mobile_450_762/public/2020-04/Tour%20Eiffel%20illuminée%20depuis%20Champs%20de%20Mars%20©%20E.Li%20%282%29.jpg?itok=R_-TVVdY" alt="Tour Eiffel">
+    <div class="carousel">
+      <input type="radio" name="carousel1" id="img1" checked>
+      <input type="radio" name="carousel1" id="img2">
+      <input type="radio" name="carousel1" id="img3">
+
+  <div class="carousel-images">
+    <div class="img-container">
+      <img src="https://www.toureiffel.paris/sites/default/files/styles/mobile_450_762/public/2020-04/Tour%20Eiffel%20illumin%C3%A9e%20depuis%20Champs%20de%20Mars%20©%20E.Li%20%282%29.jpg?itok=R_-TVVdY" alt="Tour Eiffel 1">
+    </div>
+    <div class="img-container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg" alt="Tour Eiffel 2">
+    </div>
+    <div class="img-container">
+      <img src="https://www.clementoni.com/media/prod/en/39514/tour-eiffel-1000-pcs-high-quality-collection_09fsW9P.jpg" alt="Tour Eiffel 3">
+    </div>
+  </div>
+
+  <div class="nav-manual">
+      <label for="img1" class="manual-btn"></label>
+      <label for="img2" class="manual-btn"></label>
+      <label for="img3" class="manual-btn"></label>
+    </div>
+  </div>
       <div class="info">
-        <span class="prix">À partir de 1.100.000 €</span>
-        <h3>Tour Eiffel</h3>
-        <p>Symbole de Paris, érigée pour l’Exposition universelle de 1889.</p>
-        <br>
+        <div class="prem_sec">
+          <span class="nom_article">Tour Eiffel,France</span>
+          <span class="note_article"><span class="material-symbols-outlined">star</span>5,0</span>
+        </div>
+        <p class="desc_article">Symbole de Paris, érigée pour l’Exposition universelle de 1889.</p><br>
+        <span class="peride_dispo">Hôte professionel</span><br>
+        <span class="tarifs"><strong class="prix_loc">800.000 €</strong> pour 4 nuits</span><br>
+        <span class="peride_dispo"> 4-8 janv.</span>
         <div class="actions">
-          <button class="btn-primary">Découvrir</button>
           <button class="btn-secondary">Ajouter au panier</button>
         </div>
       </div>
@@ -127,7 +154,7 @@
     <div class="carte-monument">
       <img src="https://img.freepik.com/photos-premium/pyramides-gizeh-pyramides-egypte-grande-grande-pyramide-nuit_1016228-9090.jpg" alt="Pyramides de Gizeh">
       <div class="info">
-        <span class="prix">À partir de 800.000 €</span>
+        <span class="prix"><strong>800.000 €</strong> pour 6 nuits</span>
         <h3>Les Pyramides de Gizeh</h3>
         <p>Mausolée en marbre blanc, symbole de l’amour éternel.</p>
         <br>
@@ -183,8 +210,36 @@
 
   </div>
 </section>
-<footer>
-        <p>&copy; Page faite par <strong>Kevin PADAYODI</strong> — 2025</p>
-    </footer>
+ <footer class="pied-page">
+    <div class="bloc-footer">
+      <div class="colonne-footer">
+        <h3>Monu'Rent</h3>
+        <p>Location premium. Livraison rapide. Service discret.</p>
+      </div>
+      <div class="colonne-footer">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="boutique.html">Boutique</a></li>
+          <li><a href="apropos.html">À propos</a></li>
+        </ul>
+      </div>
+      <div class="colonne-footer">
+        <h4>Réseaux</h4>
+        <ul>
+          <li><a href="erreur404.html">Instagram</a></li>
+          <li><a href="erreur404.html">Facebook</a></li>
+          <li><a href="erreur404.html">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="colonne-footer">
+        <h4>Contact</h4>
+        <p>contact@monurent.fr<br>+33 6 00 00 00 00</p>
+      </div>
+    </div>
+    <div class="bas-footer">
+      <p>© 2025 Monu'Rent — Tous droits réservés.</p>
+    </div>
+  </footer>
 </body>
 </html>
