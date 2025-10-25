@@ -710,6 +710,12 @@ body.page-accueil {
 
 
 /* =================================================== Page boutique =============================*/
+#boutique_titre {
+  text-align: center;
+  font-family: "Luxurious Script", cursive;
+  font-size: 120px;
+}
+
 .grille-articles {
   padding-top: 70px ;
   display: flex;
@@ -1117,6 +1123,7 @@ main h2 {
   text-align: center;
   font-family: "Luxurious Script", cursive;
   font-size: 120px;
+  padding: 70px;
 }
 
 
