@@ -26,6 +26,8 @@ footer>a{
     text-decoration: none;
     color: white;
 }
+
+
 /* =================================================== Page accueil =============================*/
 body.page-accueil {
   margin: 0;
@@ -838,6 +840,208 @@ body.page-accueil {
   color: darkgray;
 }
 
+
+@media (max-width: 1024px) {
+
+  /* ===== HEADER ===== */
+  .barre-nav {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 16px;
+  }
+
+  .nav-gauche, .nav-droite {
+    gap: 16px;
+  }
+
+  .marque {
+    position: static;
+    transform: none;
+    font-size: 16px;
+  }
+
+  /* ===== HERO ===== */
+  .titre-hero {
+    font-size: 38px;
+  }
+
+  .bouton-hero {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+
+  /* ===== GALERIE 3D ===== */
+
+   .galerie-3d {
+    width: 200px;
+    height: 150px;
+  }
+
+  .galerie-3d > span {
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(320px);
+  }
+}
+  
+  /* ===== SERVICES ===== */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .service-card {
+    max-width: 100%;
+    padding: 30px 20px;
+  }
+
+  /* ===== MILIEU PAGE ===== */
+  .contenu-milieu {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .media-milieu img {
+    height: 400px;
+  }
+
+  .titre-milieu {
+    font-size: 32px;
+  }
+
+  .bouton-milieu {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.texte-milieu {
+  text-align: center;
+}
+
+
+  /* ===== AVIS ===== */
+  .grille-avis {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ===== FOOTER ===== */
+  .bloc-footer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+@media (max-width: 768px) {
+
+  /* ===== HERO ===== */
+  .section-video {
+    height: 90vh;
+  }
+
+  .titre-hero {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .bouton-hero {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+
+  .section-video::after {
+    height: 180px;
+  }
+
+  /* ===== SERVICES ===== */
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* ===== GALERIE 3D ===== */
+  .galerie-3d {
+    width: 250px;
+    height: 180px;
+  }
+
+  /* ===== AVIS ===== */
+  .grille-avis {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .avis {
+    padding: 18px;
+  }
+
+  /* ===== NEWSLETTER ===== */
+  .formulaire-newsletter {
+    flex-direction: column;
+  }
+
+  .formulaire-newsletter input[type="email"] {
+    width: 100%;
+  }
+
+  /* ===== FOOTER ===== */
+  .bloc-footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .colonne-footer {
+    margin-bottom: 20px;
+  }
+
+  .bas-footer {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .titre-hero {
+    font-size: 26px;
+  }
+
+  .section-title,
+  .titre-section,
+  .section-galerie h2 {
+    font-size: 30px;
+  }
+
+  .texte-galerie,
+  .section-galerie-3d p,
+  .sous-titre-milieu {
+    font-size: 15px;
+  }
+
+  .media-milieu img {
+    height: 300px;
+  }
+
+  .bouton-milieu {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  .avantages-grid {
+    gap: 24px;
+  }
+
+  .service-card,
+  .avantage {
+    padding: 28px 20px;
+  }
+
+  .titre-milieu {
+    font-size: 26px;
+  }
+
+  .section-galerie h2::after,
+  .titre-section::after,
+  .section-galerie-3d h1::after {
+    margin: 24px auto;
+  }
+}
 
 
 
