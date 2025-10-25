@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=star" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
     <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Luxurious+Script&&family=Marcellus&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Tenor+Sans&display=swap" rel="stylesheet">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boutique</title>
 </head>
@@ -22,197 +23,229 @@
             <a href="panier.html">CART (0)</a>
         </nav>
         </div>
-  </header>
+    </header>
 
-  <section>
-            <h1 id="boutique_titre">Boutique</h1>
-        </section>
+  <section><h1 id="boutique_titre">Boutique</h1></section>
+  
   <div class="grille-articles">
+  <!-- Image de fond 1 -->
+<video class="images_fond_boutique deux_colonnes" src="https://www.pexels.com/fr-fr/download/video/28991438/" autoplay muted loop playsinline></video>
 
-     <img class="images_fond_boutique deux_colonnes"src="https://tse3.mm.bing.net/th/id/OIP.Svm2yMrLCavTdC3Ord18fAHaFj?pid=Api&P=0&h=180" alt="">
-    
-    <div class="carte-monument">
-    <div class="carousel">
-      <input type="radio" name="carousel1" id="img1" checked>
-      <input type="radio" name="carousel1" id="img2">
-      <input type="radio" name="carousel1" id="img3">
 
-  <div class="carousel-images">
-    <div class="img-container">
-      <img src="https://www.toureiffel.paris/sites/default/files/styles/mobile_450_762/public/2020-04/Tour%20Eiffel%20illumin%C3%A9e%20depuis%20Champs%20de%20Mars%20©%20E.Li%20%282%29.jpg?itok=R_-TVVdY" alt="Tour Eiffel 1">
+<!-- Carte 1 -->
+<div class="carte-monument">
+  <img src="https://www.okvoyage.com/wp-content/uploads/2022/08/tour-eiffel-nuit-1024x683.jpeg" alt="Tour Eiffel">
+  <div class="info_articles">
+    <div class="prem_sec">
+      <span class="nom_article"><strong class="nom_gras_article">Tour Eiffel</strong></span>
+      <span class="note_article"><span class="material-symbols-outlined">star</span>5,0</span>
     </div>
-    <div class="img-container">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg" alt="Tour Eiffel 2">
-    </div>
-    <div class="img-container">
-      <img src="https://www.clementoni.com/media/prod/en/39514/tour-eiffel-1000-pcs-high-quality-collection_09fsW9P.jpg" alt="Tour Eiffel 3">
-    </div>
-  </div>
-
-  <div class="nav-manual">
-      <label for="img1" class="manual-btn"></label>
-      <label for="img2" class="manual-btn"></label>
-      <label for="img3" class="manual-btn"></label>
+    <span class="desc_article">Symbole de Paris, érigée pour l’Exposition universelle de 1889.</span>
+    <span class="peride_dispo">Hôte professionnel</span>
+    <span class="tarifs"><strong class="prix_loc">800 000 €&nbsp;</strong> pour 4 nuits</span>
+    <span class="peride_dispo">4–8 janv.</span>
+    <div class="btn-articles">
+      <button class="btn-calendrier"><span class="material-symbols-outlined">date_range</span></button>
+      <button class="btn-louez">Louez Maintenant !</button>
     </div>
   </div>
-      <div class="info">
-        <div class="prem_sec">
-          <span class="nom_article">Tour Eiffel,France</span>
-          <span class="note_article"><span class="material-symbols-outlined">star</span>5,0</span>
-        </div>
-        <p class="desc_article">Symbole de Paris, érigée pour l’Exposition universelle de 1889.</p><br>
-        <span class="peride_dispo">Hôte professionel</span><br>
-        <span class="tarifs"><strong class="prix_loc">800.000 €</strong> pour 4 nuits</span><br>
-        <span class="peride_dispo"> 4-8 janv.</span>
-        <div class="actions">
-          <button class="btn-secondary">Ajouter au panier</button>
-        </div>
-      </div>
+</div>
+
+<!-- Carte 2 -->
+<div class="carte-monument">
+  <img src="https://i.pinimg.com/originals/e2/13/83/e213834e1ed4f061353a46945a102e4f.jpg" alt="Colisée">
+  <div class="info_articles">
+    <div class="prem_sec">
+      <span class="nom_article"><strong class="nom_gras_article">Colisée</strong></span>
+      <span class="note_article"><span class="material-symbols-outlined">star</span>4,8</span>
     </div>
-
-    <div class="carte-monument">
-      <img src="https://www.dubaimadame.com/wp-content/uploads/2025/05/visiter-le-burj-khalifa-a-dubai-le-guide-complet.jpg.webp" alt="Burj Khalifa">
-      <div class="info">
-        <span class="prix">À partir de 1.500.000 €</span>
-        <h3>Burj Khalifa</h3>
-        <p>Le plus haut gratte-ciel du monde, emblème de Dubaï.</p>
-        <br>
-        <div class="actions">
-          <button class="btn-primary">Découvrir</button>
-          <button class="btn-secondary">Ajouter au panier</button>
-        </div>
-      </div>
+    <span class="desc_article">Ancien amphithéâtre romain, icône historique de Rome.</span>
+    <span class="peride_dispo">Superhôte</span>
+    <span class="tarifs"><strong class="prix_loc">650 000 €&nbsp;</strong> pour 5 nuits</span>
+    <span class="peride_dispo">12–17 févr.</span>
+    <div class="btn-articles">
+      <button class="btn-calendrier"><span class="material-symbols-outlined">date_range</span></button>
+      <button class="btn-louez">Louez Maintenant !</button>
     </div>
+  </div>
+</div> 
 
-
-    <div class="carte-monument">
-      <img src="https://cdn.mos.cms.futurecdn.net/BiNbcY5fXy9Lra47jqHKGK.jpg" alt="Colisée">
-      <div class="info">
-        <span class="prix">À partir de 650.000 €</span>
-        <h3>Colisée</h3>
-        <p>Chef-d’œuvre antique, témoin de la grandeur de Rome.</p>
-        <br>
-        <div class="actions">
-          <button class="btn-primary">Découvrir</button>
-          <button class="btn-secondary">Ajouter au panier</button>
-        </div>
-      </div>
+<!-- Carte 3 -->
+<div class="carte-monument">
+  <img src="https://images.squarespace-cdn.com/content/v1/60107dff7aec136e0f8e5136/12d6915b-f576-4c55-a7e5-98f149fd92ef/frank-lloyd-wright-pennsylvania-fallingwater-10-andrew-pielage-1024x683.jpg" alt="Fallingwater">
+  <div class="info_articles">
+    <div class="prem_sec">
+      <span class="nom_article"><strong class="nom_gras_article">Fallingwater</strong></span>
+      <span class="note_article"><span class="material-symbols-outlined">star</span>4,8</span>
     </div>
-
-    <div class="carte-monument">
-      <img src="https://media.vogue.fr/photos/5c9902f23d44a06ee4cbfeed/master/w_1600%2Cc_limit/GettyImages-154894482.jpg" alt="Taj Mahal">
-      <div class="info">
-        <span class="prix">À partir de 800.000 €</span>
-        <h3>Taj Mahal</h3>
-        <p>Mausolée en marbre blanc, symbole de l’amour éternel.</p>
-        <br>
-        <div class="actions">
-          <button class="btn-primary">Découvrir</button>
-          <button class="btn-secondary">Ajouter au panier</button>
-        </div>
-      </div>
+    <span class="desc_article">Maison sur l’eau intégrée dans la nature par Frank Lloyd Wright.</span>
+    <span class="peride_dispo">Architecte : F. L. Wright</span>
+    <span class="tarifs"><strong class="prix_loc">1 000 000 €&nbsp;</strong> pour 4 nuits</span>
+    <span class="peride_dispo">5–9 avr.</span>
+    <div class="btn-articles">
+      <button class="btn-calendrier"><span class="material-symbols-outlined">date_range</span></button>
+      <button class="btn-louez">Louez maintenant !</button>
     </div>
+  </div>
+</div>
 
-    <div class="carte-monument">
-      <img src="https://www.toureiffel.paris/sites/default/files/styles/mobile_450_762/public/2020-04/Tour%20Eiffel%20illuminée%20depuis%20Champs%20de%20Mars%20©%20E.Li%20%282%29.jpg?itok=R_-TVVdY" alt="Tour Eiffel">
-      <div class="info">
-        <span class="prix">À partir de 1.100.000 €</span>
-        <h3>Tour Eiffel</h3>
-        <p>Symbole de Paris, érigée pour l’Exposition universelle de 1889.</p>
-        <br>
-        <div class="actions">
-          <button class="btn-primary">Découvrir</button>
-          <button class="btn-secondary">Ajouter au panier</button>
-        </div>
-      </div>
+<!-- Carte 4 -->
+<div class="carte-monument">
+  <img src="https://culturezvous.com/wp-content/uploads/2020/03/versailles_galerie_glaces.jpg" alt="Galerie Des Glaces">
+  <div class="info_articles">
+    <div class="prem_sec">
+      <span class="nom_article"><strong class="nom_gras_article">Galerie Des Glaces</strong></span>
+      <span class="note_article"><span class="material-symbols-outlined">star</span>4,9</span>
     </div>
-
-    <div class="carte-monument">
-      <img src="images/palais_elysee.jpg" alt="Palais de l'Elysée">
-      <div class="info">
-        <span class="prix">À partir de 1.500.000 €</span>
-        <h3>Palais de l'Elysée</h3>
-        <p>Le plus haut gratte-ciel du monde, emblème de Dubaï.</p>
-        <br>
-        <div class="actions">
-          <button class="btn-primary">Découvrir</button>
-          <button class="btn-secondary">Ajouter au panier</button>
-        </div>
-      </div>
+    <span class="desc_article">Espace fluide et ondulant conçu par SANAA pour l’EPFL (Suisse).</span>
+    <span class="peride_dispo">Architectes : J. Hardouin-Mansart</span>
+    <span class="tarifs"><strong class="prix_loc">1 300 000 €&nbsp;</strong> pour 3 nuits</span>
+    <span class="peride_dispo">20–23 mai</span>
+    <div class="btn-articles">
+      <button class="btn-calendrier"><span class="material-symbols-outlined">date_range</span></button>
+      <button class="btn-louez">Louez maintenant !</button>
     </div>
+  </div>
+</div>
 
-     <img class="images_fond_boutique trois_colonnes"src="https://tse3.mm.bing.net/th/id/OIP.Svm2yMrLCavTdC3Ord18fAHaFj?pid=Api&P=0&h=180" alt="">
-
-    <div class="carte-monument">
-      <img src="images/christ_redemp.jpeg" alt="christ redempteur">
-      <div class="info">
-        <span class="prix">À partir de 650.000 €</span>
-        <h3>Le Christ Rédempteur</h3>
-        <p>Chef-d’œuvre antique, témoin de la grandeur de Rome.</p>
-        <br>
-        <div class="actions">
-          <button class="btn-primary">Découvrir</button>
-          <button class="btn-secondary">Ajouter au panier</button>
-        </div>
-      </div>
+<!-- Carte 5 -->
+<div class="carte-monument">
+  <img src="https://live.staticflickr.com/65535/47730417022_48b332320f_z.jpg" alt="Zup25">
+  <div class="info_articles">
+    <div class="prem_sec">
+      <span class="nom_article"><strong class="nom_gras_article">Zup25</strong></span>
+      <span class="note_article"><span class="material-symbols-outlined">star</span>-5,0</span>
     </div>
-
-    <div class="carte-monument">
-      <img src="https://img.freepik.com/photos-premium/pyramides-gizeh-pyramides-egypte-grande-grande-pyramide-nuit_1016228-9090.jpg" alt="Pyramides de Gizeh">
-      <div class="info">
-        <span class="prix"><strong>800.000 €</strong> pour 6 nuits</span>
-        <h3>Les Pyramides de Gizeh</h3>
-        <p>Mausolée en marbre blanc, symbole de l’amour éternel.</p>
-        <br>
-        <div class="actions">
-          <button class="btn-primary">Découvrir</button>
-          <button class="btn-secondary">Ajouter au panier</button>
-        </div>
-      </div>
+    <span class="desc_article">Purement et uniquement Street dans toute ca splendeur</span>
+    <span class="peride_dispo">Architecte : Danis Baphomet</span>
+    <span class="tarifs"><strong class="prix_loc">1 € symbolique&nbsp;</strong> pour 4 nuits</span>
+    <span class="peride_dispo">1–5 juin</span>
+    <div class="btn-articles">
+      <button class="btn-calendrier"><span class="material-symbols-outlined">date_range</span></button>
+      <button class="btn-louez">Ne louez jamais !!!!</button>
     </div>
+  </div>
+</div>
 
-    <div class="carte-monument">
-      <img src="https://img.freepik.com/photos-premium/pyramides-gizeh-pyramides-egypte-grande-grande-pyramide-nuit_1016228-9090.jpg" alt="Pyramides de Gizeh">
-      <div class="info">
-        <span class="prix">À partir de 800.000 €</span>
-        <h3>Les Pyramides de Gizeh</h3>
-        <p>Mausolée en marbre blanc, symbole de l’amour éternel.</p>
-        <br>
-        <div class="actions">
-          <button class="btn-primary">Découvrir</button>
-          <button class="btn-secondary">Ajouter au panier</button>
-        </div>
-      </div>
+<!-- Carte 6 -->
+<div class="carte-monument">
+  <img src="https://cdn.prod.website-files.com/5d70caf362d15d860bedae09/670e7de43919186a879ba0d3_thisispaper-paris-guide-paris-la-bourse-de-commerce-tadao-ando-1.jpg" alt="Bourse Du Commerce">
+  <div class="info_articles">
+    <div class="prem_sec">
+      <span class="nom_article"><strong class="nom_gras_article">Bourse de Commerce</strong></span>
+      <span class="note_article"><span class="material-symbols-outlined">star</span>5,0</span>
     </div>
-
-    <div class="carte-monument">
-      <img src="https://cdn.pixabay.com/photo/2015/11/03/09/00/question-mark-1019922_1280.jpg" alt="Pyramides de Gizeh">
-      <div class="info">
-        <span class="prix">À partir de 800.000 €</span>
-        <h3>Les Pyramides de Gizeh</h3>
-        <p>Mausolée en marbre blanc, symbole de l’amour éternel.</p>
-        <br>
-        <div class="actions">
-          <button class="btn-primary">Découvrir</button>
-          <button class="btn-secondary">Ajouter au panier</button>
-        </div>
-      </div>
+    <span class="desc_article">Résidence flottante futuriste, design par Rem Koolhaas.</span>
+    <span class="peride_dispo">Architecte : Tadao Ando</span>
+    <span class="tarifs"><strong class="prix_loc">1 400 000 €&nbsp;</strong> pour 5 nuits</span>
+    <span class="peride_dispo">10–15 juin</span>
+    <div class="btn-articles">
+      <button class="btn-calendrier"><span class="material-symbols-outlined">date_range</span></button>
+      <button class="btn-louez">Louez maintenant !</button>
     </div>
+  </div>
+</div>
 
-    <div class="carte-monument">
-      <img src="https://cdn.pixabay.com/photo/2015/11/03/09/00/question-mark-1019922_1280.jpg" alt="Pyramides de Gizeh">
-      <div class="info">
-        <span class="prix">À partir de 800.000 €</span>
-        <h3>Les Pyramides de Gizeh</h3>
-        <p>Mausolée en marbre blanc, symbole de l’amour éternel.</p>
-        <br>
-        <div class="actions">
-          <button class="btn-primary">Découvrir</button>
-          <button class="btn-secondary">Ajouter au panier</button>
-        </div>
-      </div>
+<!-- Image de fond 2 -->
+<video class="images_fond_boutique trois_colonnes" src="https://www.pexels.com/fr-fr/download/video/31983177/" autoplay muted loop playsinline></video>
+
+<!-- Carte 7 -->
+<div class="carte-monument">
+  <img src="https://media.istockphoto.com/id/1201448358/fr/photo/statue-de-la-libert%C3%A9-pont-de-brooklyn-et-horizon-de-new-york-city-avec-manhattan-financial.jpg?s=612x612&w=0&k=20&c=ahjV6ro8JUpEe17DnKloo1gTvEObD9zBXDR0vTE341o=" alt="Statue de la Liberté">
+  <div class="info_articles">
+    <div class="prem_sec">
+      <span class="nom_article"><strong class="nom_gras_article">Statue de la Liberté</strong></span>
+      <span class="note_article"><span class="material-symbols-outlined">star</span>4,9</span>
     </div>
+    <span class="desc_article">Symbole de la liberté américaine, offerte par la France en 1886.</span>
+    <span class="peride_dispo">Hôte professionnel</span>
+    <span class="tarifs"><strong class="prix_loc">900 000 €&nbsp;</strong> pour 3 nuits</span>
+    <span class="peride_dispo">20–23 mars</span>
+    <div class="btn-articles">
+      <button class="btn-calendrier"><span class="material-symbols-outlined">date_range</span></button>
+      <button class="btn-louez">Louez Maintenant !</button>
+    </div>
+  </div>
+</div>
+<!-- Carte 8 -->
+<div class="carte-monument">
+  <img src="data:image/jpeg;base64,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" alt="Mont Saint-Michel">
+  <div class="info_articles">
+    <div class="prem_sec">
+      <span class="nom_article"><strong class="nom_gras_article">Mont Saint-Michel</strong></span>
+      <span class="note_article"><span class="material-symbols-outlined">star</span>5,0</span>
+    </div>
+    <span class="desc_article">Îlot rocheux français célèbre pour son abbaye médiévale.</span>
+    <span class="peride_dispo">Hôte passionné</span>
+    <span class="tarifs"><strong class="prix_loc">780 000 €&nbsp;</strong> pour 4 nuits</span>
+    <span class="peride_dispo">10–14 août</span>
+    <div class="btn-articles">
+      <button class="btn-calendrier"><span class="material-symbols-outlined">date_range</span></button>
+      <button class="btn-louez">Louez Maintenant !</button>
+    </div>
+  </div>
+</div>
 
+<!-- Carte 9 -->
+<div class="carte-monument">
+  <img src="https://img.freepik.com/photos-premium/pyramides-gizeh-pyramides-egypte-grande-grande-pyramide-nuit_1016228-9090.jpg" alt="Pyramides de Gizeh">
+  <div class="info_articles">
+    <div class="prem_sec">
+      <span class="nom_article"><strong class="nom_gras_article">Pyramides de Gizeh</strong></span>
+      <span class="note_article"><span class="material-symbols-outlined">star</span>4,9</span>
+    </div>
+    <span class="desc_article">Les dernières merveilles de l’Antiquité encore debout, en Égypte.</span>
+    <span class="peride_dispo">Hôte expérimenté</span>
+    <span class="tarifs"><strong class="prix_loc">850 000 €&nbsp;</strong> pour 5 nuits</span>
+    <span class="peride_dispo">2–7 juin</span>
+    <div class="btn-articles">
+      <button class="btn-calendrier"><span class="material-symbols-outlined">date_range</span></button>
+      <button class="btn-louez">Louez Maintenant !</button>
+    </div>
+  </div>
+</div>
+
+<!-- Carte 10 -->
+<div class="carte-monument">
+  <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/big-ben-at-night-london-cescassawin.jpg" alt="Big Ben">
+  <div class="info_articles">
+    <div class="prem_sec">
+      <span class="nom_article"><strong class="nom_gras_article">Big Ben</strong></span>
+      <span class="note_article"><span class="material-symbols-outlined">star</span>4,6</span>
+    </div>
+    <span class="desc_article">L’horloge emblématique du Parlement britannique à Londres.</span>
+    <span class="peride_dispo">Superhôte</span>
+    <span class="tarifs"><strong class="prix_loc">670 000 €&nbsp;</strong> pour 3 nuits</span>
+    <span class="peride_dispo">15–18 juil.</span>
+    <div class="btn-articles">
+      <button class="btn-calendrier"><span class="material-symbols-outlined">date_range</span></button>
+      <button class="btn-louez">Louez Maintenant !</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- Carte 11 -->
+<div class="carte-monument">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg" alt="Taj Mahal">
+  <div class="info_articles">
+    <div class="prem_sec">
+      <span class="nom_article"><strong class="nom_gras_article">Taj Mahal</strong></span>
+      <span class="note_article"><span class="material-symbols-outlined">star</span>5,0</span>
+    </div>
+    <span class="desc_article">Chef-d’œuvre de marbre blanc à Agra, symbole de l’amour éternel.</span>
+    <span class="peride_dispo">Hôte local</span>
+    <span class="tarifs"><strong class="prix_loc">1 000 000 €&nbsp;</strong> pour 6 nuits</span>
+    <span class="peride_dispo">1–7 avr.</span>
+    <div class="btn-articles">
+      <button class="btn-calendrier"><span class="material-symbols-outlined">date_range</span></button>
+      <button class="btn-louez">Louez Maintenant !</button>
+    </div>
+  </div>
+</div>
+
+
+  </div>
 
   </div>
 </section>

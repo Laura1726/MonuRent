@@ -1054,6 +1054,8 @@ body.page-accueil {
   text-align: center;
   font-family: "Luxurious Script", cursive;
   font-size: 120px;
+  color: #e8d18b;
+  padding-top: 40px;
 }
 
 .grille-articles {
@@ -1065,9 +1067,15 @@ body.page-accueil {
 }
 
 .images_fond_boutique{
-  height: 417px;
+  width: 100%;            
+  object-fit: cover; 
+  height: 439.6px;
   border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  box-shadow: 0 0 12px rgba(197, 163, 73, 0.4);
+
 }
+
 
 .deux_colonnes{
   width: 660px;
@@ -1084,6 +1092,17 @@ body.page-accueil {
   text-shadow: 0 1px 3px rgba(0,0,0,0.4);
 }
 
+.nom_gras_article {
+  color: var(--gold);
+  font-size: 20px;
+}
+
+.desc_article {
+  display: flex;
+  color: white;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
  .note_article{           
   font-weight: 700;
   font-size: 18px;
@@ -1092,13 +1111,16 @@ body.page-accueil {
 
 }
 
+.periode_dispo{
+  display: flex;
+}
+
+.tarifs{
+  display: flex;
+}
+
 .material-symbols-outlined {
   color: var(--gold);
-  font-variation-settings:
-  'FILL' 100,
-  'wght' 300,
-  'GRAD' 0,
-  'opsz' 0
 }
 
 .prem_sec{
@@ -1109,89 +1131,63 @@ body.page-accueil {
 }
 
 .prix_loc{
-  color: var(--gold);
+   color: var(--gold);
+  font-weight: 700;
+  font-size: 18px;
 }
 
 
-/* ========================= CAROUSEL MONUMENT ========================= */
-.carte-monument .carousel {
-  position: relative;
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-  border-radius: 18px 18px 0 0;
-}
 
-/* On masque les boutons radio */
-.carte-monument .carousel input {
-  display: none;
-}
-
-/* Conteneur des images */
-.carte-monument .carousel-images {
-  display: flex;
-  width: 300%;
-  height: 200px;
-  transition: transform 0.6s ease-in-out;
-}
-
-/* Chaque image prend toute la largeur de la carte */
-.carte-monument .carousel-images .img-container {
-  width: 100%;
-  flex-shrink: 0;
-}
-
-.carte-monument .carousel-images img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-/* --- Animation du défilement selon l’image cochée --- */
-.carte-monument #img1:checked ~ .carousel-images {
-  transform: translateX(0%);
-}
-
-.carte-monument #img2:checked ~ .carousel-images {
-  transform: translateX(-100%);
-}
-
-.carte-monument #img3:checked ~ .carousel-images {
-  transform: translateX(-200%);
-}
-
-/* --- Boutons manuels (ronds sous l’image) --- */
-.carte-monument .nav-manual {
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  z-index: 5;
-}
-
-.carte-monument .manual-btn {
-  width: 10px;
-  height: 10px;
-  border: 2px solid white;
-  border-radius: 50%;
+.btn-calendrier, .btn-louez {
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.carte-monument .manual-btn:hover {
-  background:white;
+.btn-calendrier {
+  background-color: black;
+  color: white;
+  font-family: "Marcellus";
+  padding: 10px 20px;
 }
 
-
-/* --- Responsive --- */
-@media (max-width: 600px) {
-  .carte-monument .carousel,
-  .carte-monument .carousel-images img {
-    height: 160px;
-  }
+.btn-calendrier:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
 }
+
+.btn-louez {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  color: #fff;
+  font-family: "Marcellus";
+  padding-right: 40px;
+  padding-left: 40px;
+
+}
+
+.btn-louez:hover {
+  background-color: #3b3b3b;
+  transform: scale(1.1);
+  color: gold;
+  border: 1px solid gold;
+}
+
+.btn-articles {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.info_articles{
+  padding: 20px;
+}
+
 
 
 @media (max-width: 768px) {
