@@ -28,10 +28,11 @@ footer>a{
 }
 
 
+/* ===== Menu burger pour mobile respoonsive ===== */
+
 .header-desktop { display: flex; align-items: center; justify-content: space-between; }
 .header-mobile  { display: none !important; }
 
-/* ===== Mobile / Tablette ===== */
 @media (max-width: 1024px) {
   .header-desktop { display: none !important; }
 
