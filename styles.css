@@ -1126,6 +1126,42 @@ main h2 {
     #promo{
       font-size: 50px;
     }
+
+  .barre-nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    background-color: #2c2c2c;
+  }
+
+  .marque {
+    position: static;
+    transform: none;
+    order: -1;
+    margin-bottom: 10px;
+  }
+
+  .nav-gauche,
+  .nav-droite {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-gauche a,
+  .nav-droite a {
+    font-size: 12px;
+  }
+
+  .pied-page {
+    padding: 40px 20px 15px;
+  }
+
+  .bloc-footer {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    text-align: center;
+  }
 }
 
 /* ===================================================Page apropos =============================*/
