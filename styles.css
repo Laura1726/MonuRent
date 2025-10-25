@@ -30,7 +30,7 @@ footer>a{
 body.page-accueil {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Tenor Sans";
   color: white;
   background: radial-gradient(circle at top left, rgba(255, 215, 0, 0.08), transparent 60%),
               radial-gradient(circle at bottom right, rgba(255, 215, 0, 0.05), transparent 70%),
@@ -40,21 +40,24 @@ body.page-accueil {
 }
 
 /* Header */
-.en-tete {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  color: white;
+.annonce {
+  padding: 6px 12px;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: .08em;
+  background: #c9a55a;
+  color: #fff;
+  font-family: "Marcellus";
+  text-transform: uppercase;
+
 }
 
-.annonce {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 0.06em;
-  padding: 8px 10px;
+.en-tete {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(0,0,0,.2);
+  transition: background-color .3s ease;
 }
 
 .barre-nav {
@@ -94,6 +97,7 @@ body.page-accueil {
   font-size: 18px;
   letter-spacing: 0.02em;
   white-space: nowrap;
+  font-family: "Marcellus";
 }
 
 /* Hero / vidéo */
@@ -111,6 +115,22 @@ body.page-accueil {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  
+}
+
+.section-video::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 250px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    #1a1208 100%
+  );
+  pointer-events: none;
 }
 
 .voile {
@@ -133,41 +153,28 @@ body.page-accueil {
   margin: 0 0 20px 0;
   font-size: 48px;
   font-weight: 300;
+  font-family: "Marcellus";
 }
 
 .bouton-hero {
   display: inline-block;
   padding: 10px 20px;
-  background: white;
+  background: rgba(255, 255, 255, 0.8);
   color: black;
   text-decoration: none;
   border-radius: 30px;
   font-weight: 600;
+  font-family: "tenor";
+  letter-spacing: 1px;
+  font-weight: 200;
+  transition: transform 0.4s ease, background-color 0.3s ease;
 }
 
-/* Propositions */
-.section-propositions {
-  padding: 90px 40px;
-  text-align: center;
+.bouton-hero:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.9);
 }
 
-.section-title {
-  color: #fff;
-  font-weight: 800;
-  font-size: clamp(36px, 4vw, 50px);
-  margin-bottom: 60px;
-  position: relative;
-}
-
-.section-title::after {
-  content: "";
-  display: block;
-  width: 90px;
-  height: 3px;
-  margin: 14px auto 0;
-  background: gold;
-  border-radius: 10px;
-}
 
 /* Galerie 3D */
 .section-galerie-3d {
@@ -188,6 +195,33 @@ body.page-accueil {
   line-height: 1.5;
 }
 
+.section-galerie-3d h1 {
+  font-family: "Marcellus", serif;
+  font-size: 48px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.section-galerie-3d h1::after {
+  content: "";
+  display: block;
+  width: clamp(60px, 10vw, 110px);
+  height: 3px;
+  margin: 16px auto 0;
+  background: linear-gradient(90deg, #c5a349, #f1e2a8);
+  border-radius: 999px;
+  box-shadow: 0 2px 10px rgba(197, 163, 73, 0.45);
+}
+
+.section-galerie-3d p {
+  max-width: 700px;
+  font-size: 20px;
+  line-height: 1.5;
+}
 .galerie-3d {
   position: relative;
   width: 340px;
@@ -216,11 +250,39 @@ body.page-accueil {
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-  border: 4px solid rgba(255,255,255,0.05);
+  box-shadow: 0 0 12px rgba(197, 163, 73, 0.4);
+
+  border: 2px solid #c5a253;
 }
 
 /* Services */
+.section-propositions {
+  padding: 90px 40px;
+  text-align: center;
+}
+
+.section-title {
+   font-family: "Marcellus", serif;
+  font-size: 48px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  margin: 15px auto 0;
+  background: linear-gradient(to right, #c5a349, #e6d19c);
+  border-radius: 2px;
+}
+
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -234,20 +296,21 @@ body.page-accueil {
   padding: 40px 26px;
   max-width: 360px;
   color: #eaeaea;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 12px rgba(197, 163, 73, 0.4);
   transition: all 0.3s ease;
 }
 
 .service-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.55);
+  box-shadow: 0 0 12px rgba(197, 163, 73, 0.4);
 }
 
 .service-card h3 {
-  font-size: 22px;
+  font-size: 25px;
   color: #fff;
   margin-bottom: 12px;
   font-weight: 700;
+  font-family: "Marcellus";
 }
 
 .service-card p {
@@ -257,50 +320,8 @@ body.page-accueil {
   margin: 0;
 }
 
-/* Avantages */
-.section-avantages {
-  padding: 100px 20px;
-  text-align: center;
-}
-
-.avantages-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 40px;
-  justify-items: center;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.avantage {
-  background: #1b1b1b;
-  border-radius: 18px;
-  padding: 40px 28px;
-  color: white;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
-  transition: all 0.3s ease;
-  max-width: 320px;
-}
-
-.avantage:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
-}
-
-.avantage h3 {
-  color: white;
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 12px;
-}
-
-.avantage p {
-  font-size: 15px;
-  color: white;
-  line-height: 1.5;
-}
-
 /* Milieu de page image + texte */
+
 .milieu-page {
   padding: 50px 20px;
   border-radius: 10px;
@@ -319,7 +340,8 @@ body.page-accueil {
 .media-milieu {
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  box-shadow: 0 0 12px rgba(197, 163, 73, 0.4);
+
 }
 
 .media-milieu img {
@@ -334,16 +356,27 @@ body.page-accueil {
 }
 
 .titre-milieu {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 46px;
-  margin: 0 0 15px 0;
+  font-family: "Marcellus";
+  font-size: 40px;
+  margin: 0 0 45px 0;
+}
+
+.titre-milieu::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  margin: 40px auto 0;
+  background: linear-gradient(to right, #c5a349, #e6d19c);
+  border-radius: 2px;
 }
 
 .sous-titre-milieu {
   font-size: 17px;
   color: #ccc;
   line-height: 1.5;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  font-family: "Tenor Sans";
 }
 
 .bouton-milieu {
@@ -359,10 +392,14 @@ body.page-accueil {
 
 .bouton-milieu:hover {
   background: rgba(255,255,255,0.1);
+  transform: scale(1.1);
 }
 
 /* Galerie / aperçu */
+
 .section-galerie {
+  margin-top: 100px;
+  margin-bottom: 50px;
   padding: 20px;
   text-align: center;
 }
@@ -372,6 +409,28 @@ body.page-accueil {
   font-size: 40px;
   font-weight: 800;
   margin-bottom: 40px;
+}
+
+.section-galerie h2 {
+  font-family: "Marcellus", serif;
+  font-size: 48px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.section-galerie h2::after {
+  content: "";
+  display: block;
+  width: clamp(60px, 10vw, 110px);
+  height: 3px;
+  margin: 40px auto 40px;
+  background: linear-gradient(90deg, #c5a349, #f1e2a8);
+  border-radius: 999px;
+  box-shadow: 0 2px 10px rgba(197, 163, 73, 0.45);
 }
 
 .grille-images {
@@ -388,6 +447,8 @@ body.page-accueil {
   max-width: 320px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 12px rgba(197, 163, 73, 0.4);
+
 }
 
 .carte-monument img {
@@ -425,7 +486,6 @@ body.page-accueil {
 
 .carte-monument:hover .prix {
   transform: scale(1.05);
-  color: #9fd4ff;
 }
 
 .actions {
@@ -446,6 +506,7 @@ body.page-accueil {
 .btn-primary {
   background-color: black;
   color: white;
+  font-family: "Marcellus";
 }
 
 .btn-primary:hover {
@@ -458,11 +519,71 @@ body.page-accueil {
   background-color: transparent;
   border: 1px solid #ccc;
   color: #fff;
+  font-family: "Marcellus";
+
 }
 
 .btn-secondary:hover {
   background-color: #3b3b3b;
   transform: scale(1.1);
+}
+
+/* Avantages */
+
+.section-avantages {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.avantages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  justify-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.avantage {
+  background: #1b1b1b;
+  border-radius: 18px;
+  padding: 40px 28px;
+  color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+  transition: all 0.3s ease;
+  max-width: 320px;
+  box-shadow: 0 0 12px rgba(197, 163, 73, 0.4);
+
+}
+
+.avantage:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 12px rgba(197, 163, 73, 0.4);
+
+}
+
+.avantage h2 {
+  font-family: "Marcellus", serif;
+  font-size: 48px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.avantage h3 {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  font-family: "Marcellus";
+}
+
+.avantage p {
+  font-size: 15px;
+  color: white;
+  line-height: 1.5;
 }
 
 /* Avis */
@@ -478,8 +599,25 @@ body.page-accueil {
 }
 
 .titre-section {
-  font-size: 40px;
-  margin: 0 0 50px 0;
+  font-family: "Marcellus", serif;
+  font-size: 48px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.titre-section::after {
+  content: "";
+  display: block;
+  width: clamp(60px, 10vw, 110px);
+  height: 3px;
+  margin: 40px auto 60px;
+  background: linear-gradient(90deg, #c5a349, #f1e2a8);
+  border-radius: 999px;
+  box-shadow: 0 2px 10px rgba(197, 163, 73, 0.45);
 }
 
 .grille-avis {
@@ -496,6 +634,8 @@ body.page-accueil {
   border-radius: 10px;
   padding: 22px;
   text-align: left;
+  box-shadow: 0 0 12px rgba(197, 163, 73, 0.4);
+
 }
 
 .avis-image {
@@ -598,6 +738,8 @@ body.page-accueil {
   font-size: 15px;
   text-align: center;
   transition: border 0.3s ease, background 0.3s ease;
+  box-shadow: 0 0 12px rgba(197, 163, 73, 0.4);
+
 }
 
 .formulaire-newsletter input[type="email"]::placeholder {
@@ -620,6 +762,7 @@ body.page-accueil {
   cursor: pointer;
   font-size: 15px;
   transition: all 0.3s ease;
+  font-family: "Tenor Sans";
 }
 
 .formulaire-newsletter button:hover {
@@ -635,19 +778,8 @@ body.page-accueil {
   font-family: 'Tenor Sans', sans-serif;
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0,0,0,0);
-  white-space: nowrap;
-  border: 0;
-}
-
 /* Footer */
+
 .pied-page {
   color: white;
   padding: 50px 30px 20px 30px;
@@ -664,13 +796,14 @@ body.page-accueil {
 .colonne-footer h3 {
   margin: 0 0 8px 0;
   font-size: 20px;
+  font-family: "Marcellus";
 }
 
 .colonne-footer h4 {
   margin: 0 0 8px 0;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: lightgray;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-family: "Marcellus";
 }
 
 .colonne-footer p {
