@@ -1181,7 +1181,7 @@ body.page-accueil {
 }
 
 /* ======= Carte vide générale ======= */
-.carte-monument, .vide {
+.carte-monument_articles, .vide {
   width: 320px;
 
 }
@@ -1283,6 +1283,7 @@ body.page-accueil {
   box-shadow: 0 6px 15px rgba(0,0,0,0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 0 12px rgba(197, 163, 73, 0.4);
+
 
 }
 
