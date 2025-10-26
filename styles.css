@@ -1978,7 +1978,7 @@ main h2 {
   width: 40px;
 }
 
-.contact-titre {
+.apropos-titre {
   text-align: left;
   font-weight: 800;
   font-style: normal;
@@ -1988,14 +1988,14 @@ main h2 {
   font-family: 'Marcellus SC', serif;
 }
 
-.contact-titre-principal {
+.apropos-titre-principal {
   font-family: 'Luxurious Script', cursive;
   margin-top: 15px;
-  font-size: 68px;
+  font-size: 65px;
 
 }
 
-.contact-sous-titre {
+.apropos-sous-titre {
   margin-top: 4px;
   color: var(--muted);
   font-size: 14px;
