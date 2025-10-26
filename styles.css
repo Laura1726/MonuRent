@@ -2276,7 +2276,7 @@ textarea {
   text-align: justify;
 }
 
-.timeline {
+.frise {
   max-width: 900px;
   margin: 0 auto;
   padding: 80px 20px;
@@ -2285,11 +2285,11 @@ textarea {
   font-family: "Tenor Sans", sans-serif;
 }
 
-.timeline h1 {
+.frise h1 {
   margin-bottom: 60px;
 }
 
-.timeline h1::after {
+.frise h1::after {
   content: "";
   display: block;
   width: 80px;
@@ -2300,24 +2300,24 @@ textarea {
   box-shadow: 0 2px 10px rgba(197, 163, 73, 0.45);
 }
 
-.timeline-container {
+.frise-container {
   position: relative;
   margin-left: 40px;
   border-left: 2px solid rgba(201,165,90,0.4);
   padding-left: 9px;
 }
 
-.timeline-item {
+.frise-case {
   position: relative;
   margin-bottom: 60px;
   transition: transform 0.3s ease;
 }
 
-.timeline-item:last-child {
+.frise-case:last-child {
   margin-bottom: 0;
 }
 
-.timeline-point {
+.frise-point {
   position: absolute;
   left: -10px;
   top: 6px;
@@ -2331,12 +2331,12 @@ textarea {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.timeline-item:hover .timeline-point {
+.frise-case:hover .frise-point {
   transform: translateX(-50%) scale(1.2);
   box-shadow: 0 0 20px rgba(201,165,90,0.9);
 }
 
-.timeline-date {
+.frise-date {
   position: absolute;
   left: -90px;
   top: 0;
@@ -2348,7 +2348,7 @@ textarea {
   width: 60px;
 }
 
-.timeline-date-ajd {
+.frise-date-ajd {
   position: absolute;
   left: -120px;
   top: 0;
@@ -2360,7 +2360,7 @@ textarea {
   width: 60px;
 }
 
-.timeline-content {
+.frise-content {
   background: rgba(255,255,255,0.05);
   border-radius: 12px;
   padding: 20px;
@@ -2369,19 +2369,19 @@ textarea {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.timeline-content:hover {
+.frise-content:hover {
   transform: translateY(-4px);
   box-shadow: 0 0 20px rgba(197, 163, 73, 0.4);
 }
 
-.timeline-content h3 {
+.frise-content h3 {
   font-family: "Marcellus", serif;
   font-size: 20px;
   color: var(--gold);
   margin-bottom: 8px;
 }
 
-.timeline-content p {
+.frise-content p {
   color: #ccc;
   font-size: 15px;
   line-height: 1.5;
@@ -2423,30 +2423,36 @@ textarea {
     flex-direction: column;
   }
 
-  .timeline {
+  .frise {
     padding: 50px 15px;
   }
 
-  .timeline-container {
+  .frise-container {
     border-left: none;
     padding-left: 0;
   }
 
-  .timeline-item {
+  .frise-case {
     margin-bottom: 40px;
   }
 
-  .timeline-date {
+  .frise-date {
     position: static;
     margin-bottom: 6px;
     text-align: left;
   }
 
-  .timeline-point {
+  .frise-date-ajd {
+    position: static;
+    margin-bottom: 6px;
+    text-align: left;
+  }
+
+  .frise-point {
     display: none;
   }
 
-  .timeline-content {
+  .frise-content {
     padding: 16px;
   }
 }
