@@ -2244,7 +2244,7 @@ textarea {
   gap: 40px;
 }
 
-.carte-collaborateurs {
+.case-collaborateurs {
   flex: 1 1 240px;
   max-width: 260px;
   background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
@@ -2256,12 +2256,12 @@ textarea {
   text-align: center;
 }
 
-.carte-collaborateurs:hover {
+.case-collaborateurs:hover {
   transform: translateY(-10px);
   box-shadow: 0 0 20px rgba(201,165,90,0.4);
 }
 
-.img-collaborateurs {
+.image-collaborateurs {
   width: 120px;
   height: 120px;
   object-fit: cover;
@@ -2270,14 +2270,14 @@ textarea {
   margin-bottom: 16px;
 }
 
-.carte-collaborateurs h3 {
+.case-collaborateurs h3 {
   font-family: "Marcellus", serif;
   color: var(--gold);
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-.carte-collaborateurs p {
+.case-collaborateurs p {
   font-family: "Tenor Sans", sans-serif;
   font-size: 14px;
   color: #ddd;
@@ -2293,18 +2293,8 @@ textarea {
 }
 
 @media (max-width: 768px) {
-  .carte-collaborateurs {
+  .case-collaborateurs {
     max-width: 45%;
-  }
-}
-
-@media (max-width: 480px) {
-  .carte-collaborateurs {
-    max-width: 100%;
-  }
-  .img-collaborateurs {
-    width: 100px;
-    height: 100px;
   }
 }
 
@@ -2331,6 +2321,18 @@ textarea {
     flex-direction: column;
   }
 }
+
+@media (max-width: 480px) {
+  .case-collaborateurs {
+    max-width: 100%;
+  }
+  .image-collaborateurs {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+
 
 /* =================================================== Page Erreur 404 ============================= */
 
