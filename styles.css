@@ -1180,6 +1180,119 @@ body.page-accueil {
   padding-top: 40px;
 }
 
+/* ======= Carte vide générale ======= */
+.carte-monument, .vide {
+  width: 320px;
+
+}
+
+/* ======= Zone image vide ======= */
+.zone-image-vide {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(90deg,#2a2a2a 0%, #2b2b2b 50%, #2a2a2a 100%);
+  background-size: 200% 100%;
+  animation: chargement 1.5s infinite;
+
+}
+
+.infos-article-vide{
+  padding: 20px;
+  height: 239,6px;
+}
+
+.bloc-description-vide{
+  margin-bottom: 10px;
+}
+
+
+.infos-article-vide .bloc-nom-vide,
+.infos-article-vide .bloc-note-vide,
+.infos-article-vide .bloc-description-vide,
+.infos-article-vide .bloc-hote-vide,
+.infos-article-vide .bloc-tarif-vide,
+.infos-article-vide .bloc-periode-vide,
+.bouton-calendrier-vide,
+.bouton-louer-vide {
+  background: linear-gradient(90deg,#2a2a2a 0%, #2b2b2b 50%, #2a2a2a 100%);
+  background-size: 200% 100%;
+  animation: chargement 1.5s infinite;
+  border-radius: 6px;
+}
+
+/* ======= Sections hautes et boutons ======= */
+.section-haute-vide {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+}
+
+.boutons-article-vide {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.bouton-calendrier-vide{
+  width: 64px;
+}
+.bouton-louer-vide {
+  width: 200px;
+}
+
+/* ======= Tailles de chaque zone ======= */
+.bloc-nom-vide { 
+  width: 60%; height: 28px; 
+}
+.bloc-note-vide { 
+  width: 30%; height: 28px; 
+}
+.bloc-description-vide { 
+  width: 100%; height: 43px; 
+}
+.bloc-hote-vide { 
+  width: 40%; height: 19px; 
+}
+.bloc-tarif-vide { 
+  width: 50%; height: 22px; 
+}
+.bloc-periode-vide { 
+  width: 40%; height: 19px; 
+}
+
+.bouton-calendrier-vide,
+.bouton-louer-vide {
+  height: 48px;
+  border-radius: 8px;
+}
+
+/* ======= Animation effet “shimmer” ======= */
+@keyframes chargement {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+
+
+.carte-monument_articles {
+  background: #2f2f2f;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 320px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 12px rgba(197, 163, 73, 0.4);
+
+}
+
+.carte-monument_articles img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+
 .grille-articles {
   padding-top: 50px ;
   padding-bottom: 50px;
@@ -1311,15 +1424,6 @@ body.page-accueil {
   padding: 20px;
 }
 
-
-
-@media (max-width: 768px) {
-.deux_colonnes{
-  width: 320px;
-}
-
-}
-
 @media (max-width: 1014px) {
 .trois_colonnes{
   width: 660px;
@@ -1327,11 +1431,42 @@ body.page-accueil {
   .deux_colonnes{
   width: 320px;
 }
+
+.vide{
+    display: none;
 }
+
+}
+
+@media (min-width: 1014px) {
+
+.deuxieme_vide{
+    display: none;
+}
+
+}
+
+@media (min-width: 1400px) {
+  .deuxieme_vide {
+    display: block; /* réaffiché à partir de 1400px */
+  }
+}
+
+
+
 
 @media (max-width: 675px) {
 .trois_colonnes{
   width: 320px;
+}
+
+.deux_colonnes{
+  width: 320px;
+  
+}
+
+.vide{
+    display: none;
 }
 
 }
